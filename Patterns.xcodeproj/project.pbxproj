@@ -7,18 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B99C4425283E870C000AD0FD /* Symbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B99C4424283E870C000AD0FD /* Symbol.swift */; };
 		B99FD14D28371BBA009E29AD /* PatternsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B99FD14C28371BBA009E29AD /* PatternsApp.swift */; };
 		B99FD14F28371BBA009E29AD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B99FD14E28371BBA009E29AD /* ContentView.swift */; };
 		B99FD15128371BBE009E29AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B99FD15028371BBE009E29AD /* Assets.xcassets */; };
 		B99FD15428371BBE009E29AD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B99FD15328371BBE009E29AD /* Preview Assets.xcassets */; };
+		B9E8B0542850E66400372113 /* Shape.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E8B0532850E66400372113 /* Shape.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B99C4424283E870C000AD0FD /* Symbol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Symbol.swift; sourceTree = "<group>"; };
 		B99FD14928371BBA009E29AD /* Patterns.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Patterns.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B99FD14C28371BBA009E29AD /* PatternsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatternsApp.swift; sourceTree = "<group>"; };
 		B99FD14E28371BBA009E29AD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B99FD15028371BBE009E29AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B99FD15328371BBE009E29AD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B9E8B0532850E66400372113 /* Shape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shape.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +57,8 @@
 			children = (
 				B99FD14C28371BBA009E29AD /* PatternsApp.swift */,
 				B99FD14E28371BBA009E29AD /* ContentView.swift */,
+				B99C4424283E870C000AD0FD /* Symbol.swift */,
+				B9E8B0532850E66400372113 /* Shape.swift */,
 				B99FD15028371BBE009E29AD /* Assets.xcassets */,
 				B99FD15228371BBE009E29AD /* Preview Content */,
 			);
@@ -139,6 +145,8 @@
 			files = (
 				B99FD14F28371BBA009E29AD /* ContentView.swift in Sources */,
 				B99FD14D28371BBA009E29AD /* PatternsApp.swift in Sources */,
+				B99C4425283E870C000AD0FD /* Symbol.swift in Sources */,
+				B9E8B0542850E66400372113 /* Shape.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,7 +203,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -249,7 +257,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -267,6 +275,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Patterns/Preview Content\"";
+				DEVELOPMENT_TEAM = TE9SKW2C2L;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -295,6 +304,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Patterns/Preview Content\"";
+				DEVELOPMENT_TEAM = TE9SKW2C2L;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
