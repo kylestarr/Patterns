@@ -8,40 +8,37 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State var randomSymbol = Symbol.random
+    @State var buttonPressed: Bool = false
     
-    var rows = 10
-    var cols = 8
-
     var body: some View {
-        GeometryReader { gr in
-            let width = gr.size.width / CGFloat(cols)
-            let height = gr.size.height / CGFloat(rows)
-            
-            ZStack {
-                randomSymbol.backgroundColor
-                VStack(spacing:0) {
-                    ForEach(0..<rows, id: \.self) { i in
-                        let rowCols = (i%2==0) ? cols : cols - 1
-                        HStack(spacing:0) {
-                            Group {
-                                ForEach(0..<rowCols, id: \.self) { _ in
-                                    randomSymbol
-                                        .frame(width: width, height: height)
-                                }
-                            }
-                        }
+        VStack {
+            NavigationView {
+                VStack {
+                    Text("Sophia's Playhouse")
+                        .font(.title)
+                        .padding()
+                    Spacer()
+                    VStack {
+                        Spacer()
+                        NavigationLink("High Contrast Shapes", destination: HighContrastShapes())
+                            .padding()
+                            .background(.white)
+                            .border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/, width: 5)
+                            .cornerRadius(5.0)
+                        Spacer()
+                        NavigationLink("Symbol Patterns", destination: SymbolPatterns())
+                            .padding()
+                            .background(.white)
+                            .border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/, width: 5)
+                            .cornerRadius(5.0)
+                        Spacer()
                     }
-                }
-            }
-            .ignoresSafeArea()
-            .onTapGesture {
-                let currentSymbol = randomSymbol.rawValue
-                while randomSymbol.rawValue == currentSymbol {
-                    randomSymbol = Symbol.random
+                    .shadow(radius: 3, x: 5, y: 5)
+                    Spacer()
                 }
             }
         }
+        
     }
 }
 
